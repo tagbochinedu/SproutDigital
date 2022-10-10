@@ -1,0 +1,129 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(233, 230, 230);
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 4px 2px;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: 50px;
+  --tw-shadow-color: #000;
+}
+
+.logo {
+  width: 30%;
+}
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+.nav {
+  width: 70%;
+}
+.nav svg {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: large;
+}
+.welcome {
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("https://sproutdigital.xyz/wp-content/uploads/2020/09/bothere-about-the-post-covid-era.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+h1 {
+  font-weight: 700;
+}
+.galler {
+  background-color: white;
+  margin-top: 0;
+  padding: 40px 20px;
+}
+h3 {
+  width: fit-content;
+  margin: 0 auto 30px auto;
+  font-size: 50px;
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    white 50%,
+    rgb(202, 201, 201) 50%,
+    rgb(202, 201, 201) 100%
+  );
+}
+.gallery {
+  display: flex;
+  justify-content: space-between;
+}
+.gallery div {
+  width: 32%;
+}
+.image {
+  width: 100%;
+  height: auto;
+}
+li {
+  margin: 10px 0 0 10px;
+  text-transform: capitalize;
+}
+.services {
+  display: flex;
+  justify-content: space-evenly;
+}
+.services div h5 {
+  text-align: center;
+}
+
+@media (max-width: 612px) {
+  .nav ul {
+    display: none;
+  }
+  .nav svg {
+    display: block;
+    margin-left: auto;
+  }
+  .welcome {
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 25px;
+  }
+  .gallery {
+    display: block;
+  }
+  .gallery div {
+    width: 100%;
+    margin: 15px 0;
+  }
+  .services {
+    display: block;
+  }
+  .services div h5 {
+    text-align: left;
+  }
+  .services ul {padding-left: 0;}
+}
